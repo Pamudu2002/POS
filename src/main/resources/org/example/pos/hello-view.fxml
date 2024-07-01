@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #FEEA9F;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pos.HelloController">
+   <children>
+      <Button fx:id="addItems" layoutX="20.0" layoutY="279.0" mnemonicParsing="false" onAction="#addItems" prefHeight="40.0" prefWidth="225.0" text="Add Items">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="createBill" layoutX="264.0" layoutY="279.0" mnemonicParsing="false" onAction="#updateItems" prefHeight="40.0" prefWidth="226.0" text="Update Items">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="pendingBill" layoutX="510.0" layoutY="279.0" mnemonicParsing="false" onAction="#createBill" prefHeight="40.0" prefWidth="225.0" text="Create an Inovoice">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateItems" layoutX="262.0" layoutY="539.0" mnemonicParsing="false" onAction="#viewStock" prefHeight="40.0" prefWidth="225.0" text="View Stock">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteItems" layoutX="20.0" layoutY="539.0" mnemonicParsing="false" onAction="#deleteItems" prefHeight="40.0" prefWidth="226.0" text="Delete Items">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateStock" layoutX="510.0" layoutY="539.0" mnemonicParsing="false" onAction="#updateStock" prefHeight="40.0" prefWidth="226.0" text="Add to Stock">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="189.0" fitWidth="225.0" layoutX="20.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="189.0" fitWidth="225.0" layoutX="510.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="189.0" fitWidth="225.0" layoutX="755.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="189.0" fitWidth="225.0" layoutX="20.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="189.0" fitWidth="225.0" layoutX="262.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image%205.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="189.0" fitWidth="225.0" layoutX="510.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image%206.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="pendingBill1" layoutX="755.0" layoutY="279.0" mnemonicParsing="false" onAction="#SavedBills" prefHeight="40.0" prefWidth="225.0" text="Saved Invoices">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="pendingBill11" layoutX="755.0" layoutY="539.0" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="225.0" text="Exit">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="189.0" fitWidth="225.0" layoutX="265.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image8.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="189.0" fitWidth="225.0" layoutX="755.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image9.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="1000.0" layoutX="37.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image10.png" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="profitDate" layoutX="778.0" layoutY="29.0" onAction="#viewDailyProfit" prefHeight="26.0" prefWidth="179.0" promptText="Pick a Date for View Profit" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pos.AddItems">
+   <children>
+      <Label layoutX="150.0" layoutY="22.0" prefHeight="78.0" prefWidth="299.0" text="Adding a Item" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="110.0" prefHeight="46.0" prefWidth="173.0" text="Item Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="350.0" prefHeight="46.0" prefWidth="173.0" text="Unit Price (LKR)">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="229.0" prefHeight="46.0" prefWidth="173.0" text="Unit">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="410.0" prefHeight="46.0" prefWidth="173.0" text="Quantity">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="itemNameField" layoutX="251.0" layoutY="120.0" prefHeight="26.0" prefWidth="271.0" />
+      <TextField fx:id="priceField" layoutX="251.0" layoutY="360.0" prefHeight="26.0" prefWidth="271.0" />
+      <TextField fx:id="quantityField" layoutX="251.0" layoutY="420.0" prefHeight="26.0" prefWidth="271.0" />
+      <ChoiceBox fx:id="unitField" layoutX="251.0" layoutY="240.0" prefWidth="150.0" />
+      <Button fx:id="addNew" layoutX="125.0" layoutY="498.0" mnemonicParsing="false" onAction="#addNew" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #FFD126;" text="Add New Item" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="addNew1" layoutX="324.0" layoutY="498.0" mnemonicParsing="false" onAction="#close" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #FFD126;" text="Close" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="77.0" layoutY="290.0" prefHeight="46.0" prefWidth="173.0" text="Unit Cost (LKR)">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="costField" layoutX="251.0" layoutY="300.0" prefHeight="26.0" prefWidth="271.0" />
+      <Label layoutX="77.0" layoutY="170.0" prefHeight="46.0" prefWidth="173.0" text="Item Category">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="itemCategoryField" layoutX="251.0" layoutY="180.0" prefHeight="26.0" prefWidth="271.0" />
+   </children>
+</AnchorPane>

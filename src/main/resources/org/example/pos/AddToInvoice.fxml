@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pos.AddToInvoiceController">
+
+    <children>
+        <TableView fx:id="table" layoutX="390.4" layoutY="92.0" onMouseClicked="#clickedColumn" prefHeight="406.0" prefWidth="582.0" AnchorPane.bottomAnchor="102.0" AnchorPane.leftAnchor="390.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="92.0">
+            <columns>
+                <TableColumn fx:id="item_name" prefWidth="291.1999969482422" text="Item Name" />
+                <TableColumn fx:id="price" minWidth="0.0" prefWidth="100.0" text="Price (LKR)" />
+                <TableColumn fx:id="available_stock" prefWidth="100.0" text="Available Stock" />
+                <TableColumn fx:id="unit" prefWidth="89.60006103515616" text="Unit" />
+            </columns>
+        </TableView>
+        <Button layoutX="143.0" layoutY="366.0" mnemonicParsing="false" onAction="#close" prefHeight="26.0" prefWidth="154.0" style="-fx-background-color: #FFD126;" text="Close">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <TextField fx:id="textField" layoutX="89.0" layoutY="92.0" prefHeight="26.0" prefWidth="303.0" promptText="Search to add items" />
+        <TextField fx:id="quantity" layoutX="175.0" layoutY="131.0" prefHeight="26.0" prefWidth="130.0" promptText="Quantity" />
+        <TextField fx:id="discount" layoutX="175.0" layoutY="172.0" prefHeight="26.0" prefWidth="130.0" promptText="Discount" />
+        <Button layoutX="143.0" layoutY="249.0" mnemonicParsing="false" onAction="#addItem" prefHeight="26.0" prefWidth="154.0" style="-fx-background-color: #FFD126;" text="Add to Invoice">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+      <Label layoutX="89.0" layoutY="136.0" text="Quantity" />
+      <Label layoutX="89.0" layoutY="177.0" text="Discount (x%)" />
+      <Button layoutX="143.0" layoutY="308.0" mnemonicParsing="false" onAction="#viewInovoice" prefHeight="26.0" prefWidth="154.0" style="-fx-background-color: #FFD126;" text="View Invoice">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+    </children>
+
+</AnchorPane>
